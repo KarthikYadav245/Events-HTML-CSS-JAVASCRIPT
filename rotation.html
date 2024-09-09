@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #img1 {
+        border: 2px solid red;
+        margin: 50px 0px 100px 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <button onmouseover="hello1()">90degrees</button>
+      <button onmouseover="hello2()">180degree</button>
+      <button onmouseover="hello3()">360degrees</button>
+    </center>
+    <img id="img1" src="./img2.png" alt="" />
+
+    <script>
+      function hello1() {
+        var img_get = document.getElementById("img1");
+        img_get.style.transform = "rotate(90deg)";
+      }
+      function hello2() {
+        var img_get = document.getElementById("img1");
+        img_get.style.transform = "rotate(180deg)";
+      }
+      function hello3() {
+        var img_get = document.getElementById("img1");
+        img_get.style.transform = "rotate(360deg)";
+      }
+    </script>
+  </body>
+</html>
